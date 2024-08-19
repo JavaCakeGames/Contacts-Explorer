@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    /* Prevent purple links after visiting */
+    color: #44f;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
+    /* Flash navigated-to heading 3 times */
+    animation: flash 0.5s linear infinite alternate;
+    animation-iteration-count: 6;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+    padding: .5em;
+    margin: .5em 0;
+}
+
+th {
+    text-align: right;
+}
+
+footer {
+    /* Padding so anchors box doesn't overlap */
+    height: 3.5em;
+}
+
+.anchors {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    background: papayawhip;
+    border-radius: 0 2em 2em 0;
+}
+
+.names {
+    column-count: 1;
+}
+
+/** Responsive column count. Maxes out at 16 columns (3840px+). */
+@media (min-width: 30em) {
+    .names { column-count: 2; }
+}
+@media (min-width: 45em) {
+    .names { column-count: 3; }
+}
+@media (min-width: 60em) {
+    .names { column-count: 4; }
+}
+@media (min-width: 75em) {
+    .names { column-count: 5; }
+}
+@media (min-width: 90em) {
+    .names { column-count: 6; }
+}
+@media (min-width: 105em) {
+    .names { column-count: 7; }
+}
+@media (min-width: 120em) {
+    .names { column-count: 8; }
+}
+@media (min-width: 135em) {
+    .names { column-count: 9; }
+}
+@media (min-width: 150em) {
+    .names { column-count: 10; }
+}
+@media (min-width: 165em) {
+    .names { column-count: 11; }
+}
+@media (min-width: 180em) {
+    .names { column-count: 12; }
+}
+@media (min-width: 195em) {
+    .names { column-count: 13; }
+}
+@media (min-width: 210em) {
+    .names { column-count: 14; }
+}
+@media (min-width: 225em) {
+    .names { column-count: 15; }
+}
+@media (min-width: 240em) {
+    .names { column-count: 16; }
+}
+
+@keyframes flash {
+  from { color: black; }
+  to { color: red; }
+}
