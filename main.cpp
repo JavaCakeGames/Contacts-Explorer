@@ -33,7 +33,7 @@ int main() {
         //"/home/user/clionprojects/contacts-explorer/resources/",
         //"/var/www/localhost/htdocs/"
         R"(C:\Users\James\jcake\contacts-explorer\resources\)",
-        R"(C:\Users\James\jcake\contacts-explorer\html\)"
+        R"(C:\Users\James\jcake\contacts-explorer\docs\)"
     );
     Website website(settings);
 
